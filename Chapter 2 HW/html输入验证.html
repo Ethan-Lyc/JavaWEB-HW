@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>基于HTML5的表单设计与自动校验</title>
+<meta charset="UTF-8">
+</head>
+<body>
+	<form action="">
+	  <table border="0" align="center" width="800">
+	    <tr>
+		  <td colspan="3" align="center" height="40">填写注册信息</td>
+	    </tr>
+	    <tr>
+		  <td align="right">用户名:*</td>
+		  <td><input type="text" name="userName"
+		           placeholder="请输入你的真实姓名！"  pattern="^{a-zA-Z}\w{2,7}"   required/></td>
+		  <td>用户名由字母开头，后跟字母、数字,长度是3~8个字符！</td>
+	    </tr>
+	    <tr>
+		  <td align="right">密码:*</td>
+		  <td><input type="password" name="userPwd"  required
+			     pattern="\d{6}" title="必须输入6个数字！" 
+			     autofocus="autofocus" /></td>
+		  <td>设置登录密码，6位数字！</td>
+	    </tr>
+	    <tr>
+		  <td align="right">确认密码:*</td>
+		  <td><input type="password" name="userPwd1" required /></td>
+		  <td>请再输入一次你的密码！</td>
+	    </tr>
+	    <tr>
+		  <td align="right">性别:*</td>
+		  <td><input type="radio" name="userSex" value="男" checked />男
+ 		      <input type="radio" name="userSex" value="女" />女</td>
+		  <td>请选择你的性别！</td>
+	    </tr>
+	    <tr>
+		  <td align="right">年龄:*</td>
+		  <td><input type="number" min="18" max="30"
+				 name="userAgel"  required /></td>
+		  <td>年龄在18~30之间！</td>
+	    </tr>
+
+	    <tr>
+		  <td align="right">联系电话:*</td>
+		  <td><input type="tel" name="userTel" required /></td>
+		  <td>请填写您的常用联系电话，便于联系！</td>
+	    </tr>
+	    <tr>
+		  <td align="right">出生日期:</td>
+		  <td><input type="date" name="userDate" /></td>
+	    </tr>
+	    <tr>
+		  <td align="right" valign="top">基本情况:</td>
+		  <td colspan="2">
+		    <textarea name="userBasicInfo" 	rows="5" cols="50"></textarea></td>
+	    </tr>
+	    <tr>
+		  <td colspan="3" align="left" height="40">
+		    <input type="checkbox" name="accept" value="yes" />  
+		      我已经仔细阅读并同意接受用户使用协议</td>
+	    </tr>
+	    <tr>
+		  <td colspan="3" align="center" height="40">
+		      <input type="submit" value="确认" />&nbsp;
+		      <input type="reset" value="取消" /></td>
+	    </tr>
+	  </table>
+	</form>
+</body>
+</html>
