@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="Chapter6HW">
+    <output-path>$USER_HOME$/Desktop/JAVAWEB作业PDF</output-path>
+    <root id="archive" name="Chapter6HW.war">
+      <element id="artifact" artifact-name="Chapter6HW:war exploded" />
+      <element id="dir-copy" path="$PROJECT_DIR$/web" />
+    </root>
+  </artifact>
+</component>
